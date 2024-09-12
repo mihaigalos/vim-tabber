@@ -2,8 +2,8 @@ for i in range(1, 9)
   exec 'nnoremap <leader>' . i . ' :call TabberGoToTab('. i .')<CR>'
 endfor
 
-" Mapping for leader + minus sign to go to the previously accessed tab
-nnoremap <leader>- :execute 'normal! gT'<CR>
+" Mapping to go to the previously accessed tab
+nnoremap <leader>h :execute 'normal! gT'<CR>
 
 function! TabberGoToTab(tab_number)
   let l:total_tabs = tabpagenr('$')
